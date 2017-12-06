@@ -1,0 +1,97 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/nodejs', '/usr/bin/npm', 'install', '--no-bin-links' ]
+2 info using npm@3.5.2
+3 info using node@v4.2.6
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly install normalizeTree
+8 silly loadCurrentTree Finishing
+9 silly loadIdealTree Starting
+10 silly install loadIdealTree
+11 silly cloneCurrentTree Starting
+12 silly install cloneCurrentTreeToIdealTree
+13 silly cloneCurrentTree Finishing
+14 silly loadShrinkwrap Starting
+15 silly install loadShrinkwrap
+16 silly loadShrinkwrap Finishing
+17 silly loadAllDepsIntoIdealTree Starting
+18 silly install loadAllDepsIntoIdealTree
+19 silly fetchNamedPackageData winston
+20 silly mapToRegistry name winston
+21 silly mapToRegistry using default registry
+22 silly mapToRegistry registry https://registry.npmjs.org/
+23 silly mapToRegistry uri https://registry.npmjs.org/winston
+24 verbose request uri https://registry.npmjs.org/winston
+25 verbose request no auth needed
+26 info attempt registry request try #1 at 3:14:33 AM
+27 verbose request id 9c351a0a858ade50
+28 verbose etag "5a21cba3-17ef2"
+29 verbose lastModified Fri, 1 Dec 2017 21:37:39 GMT
+30 http request GET https://registry.npmjs.org/winston
+31 http 304 https://registry.npmjs.org/winston
+32 verbose headers { date: 'Tue, 05 Dec 2017 03:14:34 GMT',
+32 verbose headers   via: '1.1 varnish',
+32 verbose headers   'cache-control': 'max-age=300',
+32 verbose headers   etag: '"5a21cba3-17ef2"',
+32 verbose headers   age: '291',
+32 verbose headers   connection: 'keep-alive',
+32 verbose headers   'x-served-by': 'cache-dfw18621-DFW',
+32 verbose headers   'x-cache': 'HIT',
+32 verbose headers   'x-cache-hits': '1',
+32 verbose headers   'x-timer': 'S1512443674.191912,VS0,VE4',
+32 verbose headers   vary: 'Accept-Encoding, Accept' }
+33 silly get cb [ 304,
+33 silly get   { date: 'Tue, 05 Dec 2017 03:14:34 GMT',
+33 silly get     via: '1.1 varnish',
+33 silly get     'cache-control': 'max-age=300',
+33 silly get     etag: '"5a21cba3-17ef2"',
+33 silly get     age: '291',
+33 silly get     connection: 'keep-alive',
+33 silly get     'x-served-by': 'cache-dfw18621-DFW',
+33 silly get     'x-cache': 'HIT',
+33 silly get     'x-cache-hits': '1',
+33 silly get     'x-timer': 'S1512443674.191912,VS0,VE4',
+33 silly get     vary: 'Accept-Encoding, Accept' } ]
+34 verbose etag https://registry.npmjs.org/winston from cache
+35 verbose get saving winston to /root/.npm/registry.npmjs.org/winston/.cache.json
+36 silly fetchPackageMetaData Error: No compatible version found: winston@mysql
+36 silly fetchPackageMetaData Valid install targets:
+36 silly fetchPackageMetaData 3.0.0-rc1, 3.0.0-rc0, 2.4.0, 2.3.1, 2.3.0, 2.2.0, 2.1.1, 2.1.0, 2.0.1, 2.0.0, 1.1.2, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0, 0.9.0, 0.8.3, 0.8.2, 0.8.1, 0.8.0, 0.7.3, 0.7.2, 0.7.1, 0.7.0, 0.6.2, 0.6.1, 0.5.11, 0.5.10, 0.5.9, 0.5.8, 0.5.7, 0.5.6, 0.5.5, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.1, 0.4.0, 0.3.5, 0.3.4, 0.3.3, 0.2.11
+36 silly fetchPackageMetaData
+36 silly fetchPackageMetaData     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+36 silly fetchPackageMetaData     at /usr/share/npm/node_modules/iferr/index.js:13:50
+36 silly fetchPackageMetaData     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+36 silly fetchPackageMetaData     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+36 silly fetchPackageMetaData     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+36 silly fetchPackageMetaData     at FSReqWrap.oncomplete (fs.js:82:15)
+36 silly fetchPackageMetaData  error for winston@mysql [Error: No compatible version found: winston@mysql
+36 silly fetchPackageMetaData Valid install targets:
+36 silly fetchPackageMetaData 3.0.0-rc1, 3.0.0-rc0, 2.4.0, 2.3.1, 2.3.0, 2.2.0, 2.1.1, 2.1.0, 2.0.1, 2.0.0, 1.1.2, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0, 0.9.0, 0.8.3, 0.8.2, 0.8.1, 0.8.0, 0.7.3, 0.7.2, 0.7.1, 0.7.0, 0.6.2, 0.6.1, 0.5.11, 0.5.10, 0.5.9, 0.5.8, 0.5.7, 0.5.6, 0.5.5, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.1, 0.4.0, 0.3.5, 0.3.4, 0.3.3, 0.2.11
+36 silly fetchPackageMetaData ]
+37 silly rollbackFailedOptional Starting
+38 silly rollbackFailedOptional Finishing
+39 silly runTopLevelLifecycles Starting
+40 silly runTopLevelLifecycles Finishing
+41 silly install printInstalled
+42 verbose stack Error: No compatible version found: winston@mysql
+42 verbose stack Valid install targets:
+42 verbose stack 3.0.0-rc1, 3.0.0-rc0, 2.4.0, 2.3.1, 2.3.0, 2.2.0, 2.1.1, 2.1.0, 2.0.1, 2.0.0, 1.1.2, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0, 0.9.0, 0.8.3, 0.8.2, 0.8.1, 0.8.0, 0.7.3, 0.7.2, 0.7.1, 0.7.0, 0.6.2, 0.6.1, 0.5.11, 0.5.10, 0.5.9, 0.5.8, 0.5.7, 0.5.6, 0.5.5, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.1, 0.4.0, 0.3.5, 0.3.4, 0.3.3, 0.2.11
+42 verbose stack
+42 verbose stack     at pickVersionFromRegistryDocument (/usr/share/npm/lib/fetch-package-metadata.js:156:16)
+42 verbose stack     at /usr/share/npm/node_modules/iferr/index.js:13:50
+42 verbose stack     at /usr/share/npm/lib/utils/pulse-till-done.js:19:8
+42 verbose stack     at saved (/usr/share/npm/lib/cache/caching-client.js:168:7)
+42 verbose stack     at /usr/share/npm/node_modules/graceful-fs/polyfills.js:210:7
+42 verbose stack     at FSReqWrap.oncomplete (fs.js:82:15)
+43 verbose cwd /var/www
+44 error Linux 4.4.0-87-generic
+45 error argv "/usr/bin/nodejs" "/usr/bin/npm" "install" "--no-bin-links"
+46 error node v4.2.6
+47 error npm  v3.5.2
+48 error No compatible version found: winston@mysql
+48 error Valid install targets:
+48 error 3.0.0-rc1, 3.0.0-rc0, 2.4.0, 2.3.1, 2.3.0, 2.2.0, 2.1.1, 2.1.0, 2.0.1, 2.0.0, 1.1.2, 1.1.1, 1.1.0, 1.0.2, 1.0.1, 1.0.0, 0.9.0, 0.8.3, 0.8.2, 0.8.1, 0.8.0, 0.7.3, 0.7.2, 0.7.1, 0.7.0, 0.6.2, 0.6.1, 0.5.11, 0.5.10, 0.5.9, 0.5.8, 0.5.7, 0.5.6, 0.5.5, 0.5.4, 0.5.3, 0.5.2, 0.5.1, 0.5.0, 0.4.1, 0.4.0, 0.3.5, 0.3.4, 0.3.3, 0.2.11
+49 error If you need help, you may report this error at:
+49 error     <https://github.com/npm/npm/issues>
+50 verbose exit [ 1, true ]

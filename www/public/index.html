@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="assets/css/style.css" rel="stylesheet">
+
+    <title>NodeJS Starter Page</title>
+</head>
+<body>
+    <div class="global-content">
+        <h1 class="global-header">
+            Server Running
+        </h1>
+
+        <section class="tests">
+            <div class='col-1'>
+                Is everything running?
+            </div>
+            <div class="col-2">
+                <ul>
+                    <li>linux: <i class="fa fa-thumbs-o-up"></i></li>
+                    <li>nginx: <i class="fa fa-thumbs-o-up"></i></li>
+                    <li>express: <i class="fa fa-thumbs-o-up"></i></li>
+                    <li>mariadb: <span class='js-mysql-isworking'></span></li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="attribution">
+            Derived from <a href="https://github.com/tbremer/LEMN" target="_blank">LEMN</a>
+        </section>
+    </div>
+
+    <script>
+    (function ($) {
+        $(function () {
+            $.ajax({
+                url: '/mysql/test',
+                type: 'GET',
+                dataType: 'json',
+                error: function () {
+                    $('.js-mysql-isworking').html('<i class="fa fa-thumbs-o-down"></i>');
+                },
+                success: function (data) {
+                    if (data.success) {
+                        $('.js-mysql-isworking').html('<i class="fa fa-thumbs-o-up"></i>');
+                        return;
+                    }
+
+                    $('.js-mysql-isworking').html('<i class="fa fa-thumbs-o-down"></i>');
+                    return;
+                }
+            });
+        });
+    })(jQuery);
+    </script>
+</body>
+</html>
