@@ -1,10 +1,12 @@
 
-##Requirements
+Requirements
+-----
 
 -	[VirtualBox](https://www.virtualbox.org/wiki/Downloads)
 -	[Vagrant](https://www.vagrantup.com)
 
-##Setup
+Setup
+-----
 
 -	Clone this repo
 -	Run `vagrant up`
